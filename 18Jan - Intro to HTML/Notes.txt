@@ -1,0 +1,18 @@
+HTML: Hyper Text Mark Up Language is used to describe / develop static web pages.
+
+Web Page: Any page that can be accessed through internet is known as web page.
+
+A collection of web pages results in website.
+
+-----------------------------------------------
+
+Mark Up Language:
+
+-> Mark Up Language works based on tags. // is collection of tags...
+
+-> Mark Up Language can be used to describe data (XML) / UI (HTML)
+
+A tag is a keyword that is enclosed with angular brackets.
+ex: <html>, <head>, <body>, <h1>, <h2>, ...
+
+HTML is a collection of tags.   *

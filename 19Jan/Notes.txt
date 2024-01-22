@@ -1,0 +1,21 @@
+VS Code installed...
+
+Extension: Live Server
+
+Always open the index.html file with server ' live server '
+
+
+Extension 2: HTML CSS Support
+
++ debug the code...
+
+// configuration setting in VS Code
+1. vs code > view > Command Palette
+    > themes 
+        > Preferences: Toggle dark / light themes
+
+2. vs code > File > auto save
+
+3. 
+
+Note: <!DOCTYPE html>  html 5 version...

@@ -1,0 +1,26 @@
+class attributes:
+<style>
+    .theme1 {
+        background-color: grey;
+        color: white;
+    }
+</style>
+
+<h1 class="theme1">Digital Lync</h1>
+------------------------------------------
+
+# Intro to CSS: Cascading Style Sheets
+
+External    --> style.css file
+
+Internal    --> inside html page in head tag style
+    <style>
+        h1 {
+            font-size: 120px;
+            background-color: aquamarine;
+        }            
+    </style>
+
+Inline      --> 
+    <h1 style="color: red; text-align: center;">Header</h1>
+

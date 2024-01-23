@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Attribute</title>
+
+        <style>
+            .dark-content {
+                /* color-scheme: dark light; */
+                background-color: #1E1E1E;
+                color: #FFFFFF;
+            }
+
+            .test:hover {
+                background-color: green;
+            }
+        </style>
+
+        <script>
+            document.addEventListener('contextmenu', function(event) {
+                event.preventDefault();
+            })
+        </script>
+    </head>
+
+    <body>
+        <!-- <input 
+            type="text"
+            placeholder="For user understand"  
+            id=""  
+        /> -->
+        <input
+            type="password"
+            placeholder="hidden text"
+            id="passwordField"
+        />
+
+        <!-- <img
+            src="here src is one attribute"
+            alt="alt is another attribute of img"
+        /> -->
+
+        <!-- <p type="text">No Specific Atrributes for P tag 
+            like type, placeholder</p> -->
+
+        <p id="id_one"
+            style="font-size: 100px; 
+                text-align: center;
+                color: greenyellow"
+        >Global Attribute</p>
+
+        <!-- <h1 id="id_two"
+            style="font-size: 100px; 
+                text-align: center;
+                color: green"
+        >Global Attribute</h1> -->
+        <!-- <h2 id="id_three"
+            style="font-size: 100px; 
+                text-align: center;
+                color: yellow"
+        >All Tags applicable irrespective of elements</h2> -->
+
+        <!-- <div class="dark-content">
+            color-scheme: dark / light; 
+        </div> -->
+
+        <button onclick="greeting()">Click ME</button>
+
+        <button onclick="alert('Direct Calling Func')">Click Here</button>
+
+
+        <input type="text" placeholder="restrict paste" onpaste="return false" />
+        <!-- <input type="text" placeholder="restrict paste" onpaste="disablePaste(event)" /> -->
+
+        <input type="text" placeholder="restrict copy" oncopy="return false" />
+
+
+        <!-- 
+            <h1>h1 - 32 px</h1>
+            <h2>h2 - 24 px</h2> 
+        -->
+
+        <!-- <p onmouseover="this.style.color='red'">ON Mouse Over</p> -->
+        <p class="test">ON Mouse Over</p>
+
+        <script>
+            function greeting() {
+                alert('Calling Func from Srcipt')
+            }
+
+            // function disablePaste() {
+            //     e.preventDefault();
+
+            //     // return false;
+            // }
+        </script>
+        
+    </body>
+</html>

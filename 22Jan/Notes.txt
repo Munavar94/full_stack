@@ -1,0 +1,153 @@
+Attributes:
+its an key-value pair that enhance the capability of a html element
+
+Ex:
+<input /> - text field
+
+    placeholder 
+    type   ----------------> are the attributes of input 
+
+
+We can categorize attributes into 3 types:
+
+1. Element Specific Attributes:
+-> In HTML, for every element there are some specific attributes
+created, such attributes we consider them as element specific attributes.
+
+Eg:
+    <input
+        type="password"
+        placeholder="hidden text"
+        id="passwordField"
+    />
+
+Link: https://www.w3schools.com/tags/
+
+2. Global Attributes:
+-> These attributes are not bound to any html element.
+
+Eg: style, id, etc...
+    <p id="id_one"
+        style="font-size: 100px; 
+            text-align: center;
+            color: greenyellow"
+    >Global Attribute</p>
+
+3. Event Attributes:
+
+Event attributes can be used with any html element.
+
+    <button onclick="showGreetings()">Greetings</button>
+
+    <button onclick="alert('9879')">OTP</button>
+
+    <script>
+        function showGreetings(){
+            alert("Good Morning! Have a great day!");
+        }
+    </script>
+----------------------------------------------------------------------
+
+# Problem Statement:
+Restrict the user from pasting content into the text field.
+Ex: 
+    <input type="text" placeholder="restrict paste" onpaste="return false" />
+
+Restrict the user from copying content into the text field.
+Ex:
+    <input type="text" placeholder="restrict copy" oncopy="return false" />
+
+
+2. disable right click in web page
+Example Event Name: oncontextmenu
+
+ <script>
+    document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+    })
+ </script>
+
+
+# Events Reference: 
+https://www.w3schools.com/tags/ref_eventattributes.asp 
+
+
+## links: 
+ 
+ If we want to provide navigation between pages, then we can use html links. 
+
+ tag: <a>
+
+
+
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+        <a href="page1.html">Home</a> &nbsp;&nbsp;&nbsp;
+        <a href="page2.html">Login</a>&nbsp;&nbsp;&nbsp;
+        <a href="page3.html">Register</a>
+
+         <h1>Page 3</h1>
+
+     </body>
+</html> 
+
+
+page1.html: 
+
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+         <a href="page1.html">Home</a> &nbsp;&nbsp;&nbsp;
+         <a href="page2.html">Login</a>&nbsp;&nbsp;&nbsp;
+         <a href="page3.html">Register</a>
+
+         <h1>Page 1</h1>
+
+     </body>
+</html> 
+
+
+page2.html: 
+
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+         <a href="page1.html">Home</a> &nbsp;&nbsp;&nbsp;
+         <a href="page2.html">Login</a>&nbsp;&nbsp;&nbsp;
+         <a href="page3.html">Register</a>
+
+         <h1>Page 2</h1>
+
+     </body>
+</html>
+
+page3.html: 
+
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+         <a href="page1.html">Home</a> &nbsp;&nbsp;&nbsp;
+         <a href="page2.html">Login</a>&nbsp;&nbsp;&nbsp;
+         <a href="page3.html">Register</a>
+
+         <h1>Page 3</h1>
+
+     </body>
+</html>

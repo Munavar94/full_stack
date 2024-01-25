@@ -1,0 +1,139 @@
+Properties and Values:
+
+CSS provides different Properties and Values to apply some styling to html elements.
+
+
+h1 {
+    text-align: center;
+}
+
+text-align is called as property.
+center is called as value.
+
+A property can have more than one value but however, we can use only 
+one value with one property at a time.
+
+# Selectors:
+
+We have diff types of Selectors in CSS.
+
+1. element selector:
+syntax: 
+    element_name {
+        property: value;
+    }
+
+ex: 
+    h1, h2 {
+        text-align: center;
+        color: red;
+    }
+
+2. id selector:
+
+#id_selector, h4, .class_selector {
+    color: green;
+    font-size: 40px;
+}
+
+3. class selector:
+we can use more than 1 class in a class attribute to use more than 1 css class.
+
+.center {
+    text-align: center;
+    }
+.bg_dark {
+    background-color: black;
+}
+.text-color {
+    color: white;
+}
+
+<p class="center bg_dark text-color">Multi Class Name at class attribute</p>
+
+-------------------------------------------------------------------------------------
+
+# Ref link: https://www.w3schools.com/css/css_selectors.asp
+
+4. CSS Combinators:
+
+4.1 descendant selector (space)
+Note: immediate to Parent for child
+
+Syntax : 
+    element_1 element_2 {
+
+}
+
+    div p {
+        text-align: center;
+        color: red;
+    }
+
+Ex: 
+    <div>
+            <div>
+                <h6>Hello World</h6>
+                <p>Paragraph 1</p>
+
+                <!-- <section>
+                    <p>Paragraph 5</p>
+                </section> -->
+            </div>
+            <p>Paragraph 2</p>
+        </div>
+
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+    </div>
+
+4.2 child selector ( > )
+used to apply css to the child element.
+
+Syntax:
+    div > p {
+        text-align: center;
+        color: red;
+    }
+
+
+
+4.3 adjacent sibiling selector ( + )
+used to apply css immediate to the element
+only child get applicable
+
+Syntax:
+
+    div + p {
+        text-align: center;
+        color: red;
+    }
+
+4.4 general sibiling selector ( ~ )
+used to apply css all the children to the element after tags
+not inside the element tags
+
+Syntax:
+    div ~ p {
+        text-align: center;
+        color: red;
+    }
+
+5. Pseudo-Classes:
+
+Syntax: 
+selector:pseudo-class {
+  property: value;
+}
+
+Note: selector = id / class / h1 etc...
+
+EX: a:link {
+    color: #FF0000;
+}
+
+a:visited
+a:however
+a:active
+
+6. 

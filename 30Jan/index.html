@@ -3,21 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typography</title>
+    <title>Box Model</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <style>
         h1 {
-            font-family: 'Sofia', sans-serif;
-            font-size: medium;  /* small, x-larger */
-            font-weight: 700;   /* 100 200 ... 700 */
-            line-height: 2.6;   /*  80% 1.6 1rem */
-            letter-spacing: 10px;
+            /* border-style: solid;
+            border-color: red;
+            border-width: 5px; */
+
+            border: 5px solid red;
+            background-color: aquamarine;
+            /* text-align: center; */
+
+            /* center */
+            margin-left: 490px;
+            margin-right: 450px;
+            margin-top: 300px ;
+            padding: 30px;
+        }
+
+        .img {
+            width: 50px;
+            height: 50px;
+            margin-left: 1400px;
+            margin-top: 10px;
+        }
+        p {
+            margin-left: 1360px;
+            padding-top: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>Typography</h1>
+    <img src="./logo-new.png" alt="logo" class="img" />
+    <p>Address: Vijayawada</p>
 
-    <p>Gap b/w 2 lines used  line-height</p>
+    <h1>
+        60% off on all the products. Offer ends on 31st Jan 2024
+    </h1>
 </body>
 </html>

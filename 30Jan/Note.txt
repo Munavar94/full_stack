@@ -1,0 +1,109 @@
+# initial property to get:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>initial</title>
+    <style>
+        div {
+            color: red;
+            /* font-size: 38px; */
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <h1>Default of h1 value</h1>
+
+    <div>
+        <h1 style="color: initial; font-size: initial; font-family: initial;">Hello World</h1>
+
+        <h2>Digital Lync</h2>
+
+        <p>This is an example for initial/default value</p>
+    </div>
+</body>
+</html>
+
+-----------------------------------------------------------------
+
+# Typography:
+
+Note: h1 --> 36px
+
+# Generic Font Families:
+1. Serif
+2. Sans-Serif   *
+3. Monospace
+4. cursive
+5. Fantasy
+
+* Google Fonts adding to HTML website...
+
+1. CDN url in head section:
+href='https://fonts.googleapis.com/css?family=Sofia'
+
+2. download css file link in head section
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        h1 {
+            font-family: 'Sofia', sans-serif;
+            font-size: small;
+            font-weight: 700;
+            line-height: 50%;
+            letter-spacing: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Typography</h1>
+</body>
+</html>
+------------------------------------------------------------------------
+
+Example 2:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        h1 {
+            font-family: 'Sofia', sans-serif;
+            font-size: medium;  /* small, x-larger */
+            font-weight: 700;   /* 100 200 ... 700 */
+            line-height: 2.6;   /*  80% 1.6 1rem */
+            letter-spacing: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Typography</h1>
+
+    <p>Gap b/w 2 lines used  line-height</p>
+</body>
+</html>
+-------------------------------------------------------------------------
+
+# Box Model:
+
+without box model we cannot create a layout of a web page.
+
+For every HTML element, a box is by default created so that it can be 
+aligned any where in the web page.
+
+It is combination of content + margin + border + padding
+

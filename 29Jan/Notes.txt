@@ -112,3 +112,32 @@ Example:
     <p id="id" class="test" style="color: brown;">Inline - First Priority</p>
 </body>
 </html>
+
+---------------------------------------------------------------------
+
+# Inheritance:
+It is the process where the child element gets the parent element css properties by default.
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+    <link rel="stylesheet" href="external.css">
+    <style>
+        p {
+            color: green;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <p>Inheritate the paragraph color <em style="color: pink;">emphazied text</em> in it.</p>
+</body>
+</html>
+-------------------------------------------------------------------------
+
+Ex: 2
+

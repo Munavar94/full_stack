@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Specificity - CSS</title>
+    <title>Inheritance</title>
+    <link rel="stylesheet" href="external.css">
     <style>
-        #id {
-            color: blue;
-        }
-        .test{
-            color: red
-        }
-        p {
+        span {
             color: green;
+            font-size: 40px;
+        }
+
+        .extra span {
+            /* color: yellow; */
+            color: inherit;
         }
     </style>
 </head>
 <body>
-    <p id="id" class="test" style="color: brown;">Inline - First Priority</p>
+    <div class="extra" style="color: blue;">
+        Div Color to inhert in span tag
+
+        <span>span element text</span>
+    </div>
 </body>
 </html>

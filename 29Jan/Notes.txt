@@ -42,5 +42,73 @@
 </html>
 
 ------------------------------------------------------------------------
+# CSS Attribute Selector:
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS Attribute Selector */
+        a[target = '_blank'] {
+            background-color: greenyellow;
+            text-decoration: none;
+        }
 
+        input[type = 'password'] {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.facebook.com/" target="_blank">FaceBook</a>
+    <a href="https://www.linkedin.com/">LinkedIN</a>
+
+    <!-- CSS Attribute Selector -->
+    <input type="text" placeholder="enter username" />
+    <input type="email" placeholder="enter email" />
+    <input type="password" placeholder="enter password" />
+</body>
+</html>
+
+-------------------------------------------------------------------------
+
+# Specificity:
+
+1. Inline Styles                                    : 1000    
+Ex: <h1 style="color: pink">Text</h1>
+
+2. IDs                                              : 100
+Ex: #navbar
+
+3. Classes, pseudo-classes, attribute selectors     : 10
+Ex: .test, :hover,          [href], title, etc...
+
+4. Elements and pseudo-Elements                     : 1
+Ex: h1,         ::before
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity - CSS</title>
+    <style>
+        #id {
+            color: blue;
+        }
+        .test{
+            color: red
+        }
+        p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <p id="id" class="test" style="color: brown;">Inline - First Priority</p>
+</body>
+</html>

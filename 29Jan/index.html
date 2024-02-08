@@ -3,35 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Specificity - CSS</title>
     <style>
-        p::after{
-            content: '@gmail.com';
+        #id {
+            color: blue;
         }
-
-        ::marker{
-            color: red;
+        .test{
+            color: red
         }
-
-        h1::before{
-            content: 'Hello ';
+        p {
+            color: green;
         }
     </style>
 </head>
 <body>
-    <p>Email: munavar</p>
-
-    <ul>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
-    </ul>
-    <ol>
-        <li>One</li>
-        <li>Four</li>
-        <li>Three</li>
-    </ol>
-
-    <h1>Munavar</h1>
+    <p id="id" class="test" style="color: brown;">Inline - First Priority</p>
 </body>
 </html>

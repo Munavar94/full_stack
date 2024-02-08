@@ -1,0 +1,195 @@
+Units of Measurements in CSS:
+
+The measurement of css drills down to pixels.
+Ref: https://elementor.com/help/
+
+1. Absolute     --> Exact Measurement
+
+Ex: px *        pixels (1px = 1/96th of 1in)
+
+2. Relative *   --> 
+
+Ex: 
+rem : root element
+em  : element
+%   :
+vw  :
+vh  :
+vmin:
+vmax:
+------------------------------------------------------------------
+Ex: px 
+
+Note: used for Absolute measurement. It becomes relative when shows in
+different screens.
+It is best suited if there is no response required.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units in CSS</title>
+    <style>
+        .parent {
+            background-color: red;
+            width: 500px;
+            height: 300px;
+        }
+        .child {
+            /* font-size: x-small; */
+
+            background-color: green;
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+
+        <div class="child">
+            <!-- Child Element -->
+        </div>
+
+    </div>
+</body>
+</html>
+------------------------------------------------------------------
+
+Ex: %
+Note: when we have parent - child relationship, if the child element
+wants to derive the measurement based on parent element, then
+we can use % (percentage)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units in CSS</title>
+    <style>
+        .parent {
+            background-color: red;
+            width: 500px;
+            height: 300px;
+        }
+        .child {
+            background-color: green;
+            width: 10%;     /* 500/100 *10 = 50px */
+            height: 10%;    /* 300/100 *10 = 30px */   
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+
+        <div class="child">
+            
+        </div>
+
+    </div>
+</body>
+</html>
+-----------------------------------------------------------------------
+
+# width vs max-width
+
+Device 1: max-width: 600px -> image -> width: 400px
+Device 2: max-width: 800px -> image -> width: 450px
+Device 3: max-width: 1200px -> image -> width: 500px
+
+in MediaQuery we use max-width for responsiviness
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units in CSS</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        @media screen and (min-width: 480px) {
+            body {
+                background-color: lightgreen;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            body {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Resize the browser window to see the effect!</h1>
+
+</body>
+</html>
+-------------------------------------------------------------------------
+
+em for element ->
+16px -> 1em = 16 px
+        2em = 2 * 16 px
+        2.3em = 2.3 * 16 px
+
+Note: em, rem, vw, vh, % helps us in providing responsiveness to the websites.
+
+Note: em, rem, % used for font-size not on width and height
+
+rem --> for root element
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units in CSS</title>
+    <style>
+        html {
+            font-size: 20px;
+        }
+        .x {
+            font-size: 40px;
+        }
+
+        .y {
+            background-color: green;
+            width: 4em; 
+            /* height: 4em; */
+            /* font-size: 30px; */
+
+            height: 2rem;   /*2 * 20 = 40px */
+        }
+
+        /* .z {
+            font-size: 10px;
+        } */
+    </style>
+</head>
+<body>
+    
+    <div class="x">
+        <!-- <h1>Default 16px</h1> -->
+        Parent Content
+
+        <div class="y">
+            Child Content
+        </div>
+    </div>
+</body>
+</html>
+----------------------------------------------------------------
+
+# vw, vh ? why need in media query...
+
+1% of viewport 4vw
+4 * 1260/100= 1.260
+4 * 1.260 = 4.8 px
+
